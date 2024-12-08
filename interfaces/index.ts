@@ -1,3 +1,13 @@
-type CardProps = {};
+export type CardProps = {
+  title: string;
+  description: string;
+  image: string;
+  onButtonClick: () => void;
+};
 
-type ButtonProps = {};
+export type ButtonProps = {
+  text: string;
+  onClick: () => void;
+  disabled?: boolean;
+  className?: string;
+};
